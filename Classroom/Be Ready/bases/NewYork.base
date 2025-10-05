@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - nome == "New York Classroom"
+    order:
+      - data
+      - conteúdo
+      - Alunos
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+    limit: 10
+    columnSize:
+      note.data: 154
+      note.conteúdo: 104
+      note.Alunos: 308
+      file.name: 123

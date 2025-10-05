@@ -1,0 +1,43 @@
+{
+  "trigger_auto_manual": "Automatic",
+  "use_regex_to_check_for_tags": false,
+  "statusBar_trigger_indicator": true,
+  "folder_tag_pattern": [
+    {
+      "folder": "Classroom/Lessons/English File",
+      "tag": "#english-file-lesson",
+      "pattern": ""
+    },
+    {
+      "folder": "Classroom/Lessons/ESL Brains",
+      "tag": "#esl-brains-lesson",
+      "pattern": ""
+    },
+    {
+      "folder": "Classroom/Lessons/Ellii",
+      "tag": "#ellii-lesson",
+      "pattern": ""
+    },
+    {
+      "folder": "Classroom/Be Ready/Classes",
+      "tag": "#be-ready-classes",
+      "pattern": ""
+    },
+    {
+      "folder": "Classroom/Lessons/Guides",
+      "tag": "#lessons-guide",
+      "pattern": ""
+    },
+    {
+      "folder": "",
+      "tag": "",
+      "pattern": ""
+    }
+  ],
+  "use_regex_to_check_for_excluded_folder": false,
+  "excluded_folder": [
+    {
+      "folder": ""
+    }
+  ]
+}

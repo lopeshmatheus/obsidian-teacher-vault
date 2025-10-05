@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - student == "Kauã"
+    order:
+      - data
+      - conteúdo
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: conteúdo
+        direction: ASC
+    limit: 10
+    columnSize:
+      note.data: 182
+      note.conteúdo: 379
+      file.name: 119

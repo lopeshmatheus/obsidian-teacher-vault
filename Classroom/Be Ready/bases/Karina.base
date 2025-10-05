@@ -1,0 +1,23 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("be-ready-classes")
+        - Alunos == ["Karina"]
+    order:
+      - data
+      - conteúdo
+      - material
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: material
+        direction: ASC
+      - property: conteúdo
+        direction: ASC
+    columnSize:
+      note.data: 156
+      note.conteúdo: 120
+      note.material: 265

@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Alunos == ["Rafael Tavares"]
+    order:
+      - data
+      - material
+      - nivel
+      - conteúdo
+      - file.name
+    sort:
+      - property: nivel
+        direction: ASC
+    columnSize:
+      note.material: 101
+      note.nivel: 59
+      note.conteúdo: 59
+      file.name: 126

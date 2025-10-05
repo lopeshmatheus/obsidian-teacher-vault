@@ -1,0 +1,22 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Alunos == ["Luiz Ferreira"]
+    order:
+      - data
+      - conteúdo
+      - nivel
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: nivel
+        direction: DESC
+    limit: 10
+    columnSize:
+      note.data: 172
+      note.conteúdo: 120
+      note.nivel: 260
+      file.name: 140

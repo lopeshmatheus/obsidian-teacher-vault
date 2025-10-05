@@ -1,0 +1,19 @@
+views:
+  - type: cards
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("be-ready-classes-bases")
+    order:
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+    columnSize:
+      note.data: 154
+      note.quiz: 23
+      note.material: 170
+      note.nivel: 159
+    cardSize: 320
+    imageAspectRatio: 1.65
+    imageFit: contain

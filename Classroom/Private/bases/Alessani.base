@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - student == "Alessani"
+    order:
+      - data
+      - material
+      - conteúdo
+      - file.name
+    columnSize:
+      note.material: 132
+      note.conteúdo: 280

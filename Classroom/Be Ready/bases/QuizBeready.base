@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("aula")
+        - quiz == false
+    order:
+      - data
+      - nome
+      - nivel
+      - conteúdo
+      - file.name
+    sort: []
+    columnSize:
+      note.data: 152
+      note.nome: 104
+      note.nivel: 113
+      note.conteúdo: 102
+    rowHeight: medium

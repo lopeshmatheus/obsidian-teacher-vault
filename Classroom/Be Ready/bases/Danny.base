@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Alunos == ["Danny"]
+    order:
+      - data
+      - nivel
+      - conteúdo
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+    columnSize:
+      note.nivel: 168
+      note.conteúdo: 248

@@ -1,0 +1,19 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - student == "Myllena"
+    order:
+      - data
+      - conteúdo
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: conteúdo
+        direction: ASC
+    limit: 10
+    columnSize:
+      note.data: 173
+      note.conteúdo: 303

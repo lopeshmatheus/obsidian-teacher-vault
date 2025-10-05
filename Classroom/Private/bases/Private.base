@@ -1,0 +1,9 @@
+views:
+  - type: cards
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("private-student")
+    order:
+      - file.name
+    cardSize: 290

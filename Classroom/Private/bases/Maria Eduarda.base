@@ -1,0 +1,21 @@
+views:
+  - type: table
+    name: Tabela
+    filters:
+      and:
+        - student == "Maria Eduarda"
+    order:
+      - data
+      - conteúdo
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: conteúdo
+        direction: ASC
+      - property: file.name
+        direction: ASC
+    limit: 10
+    columnSize:
+      note.data: 197
+      note.conteúdo: 306

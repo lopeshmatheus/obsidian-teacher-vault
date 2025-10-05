@@ -1,0 +1,23 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("be-ready-classes")
+        - quiz != true
+    order:
+      - quiz
+      - data
+      - conteúdo
+      - nome
+      - gemini-quiz
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+    columnSize:
+      note.quiz: 16
+      note.data: 113
+      note.conteúdo: 89
+      note.nome: 145
+      file.name: 41

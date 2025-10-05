@@ -1,0 +1,21 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Alunos == ["Ana Beatriz"]
+    order:
+      - data
+      - conteúdo
+      - nivel
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: conteúdo
+        direction: ASC
+      - property: nivel
+        direction: ASC
+    columnSize:
+      note.conteúdo: 165
+      note.nivel: 231

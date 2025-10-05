@@ -1,0 +1,21 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - nome == "London Classroom"
+    order:
+      - data
+      - conteúdo
+      - Alunos
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: Alunos
+        direction: DESC
+    columnSize:
+      note.data: 167
+      note.conteúdo: 156
+      note.Alunos: 250
+      file.name: 122

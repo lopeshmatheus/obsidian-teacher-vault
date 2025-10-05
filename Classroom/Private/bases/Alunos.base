@@ -1,0 +1,11 @@
+views:
+  - type: cards
+    name: Tabela
+    filters:
+      and:
+        - file.hasTag("profile")
+    order:
+      - file.name
+    imageFit: ""
+    imageAspectRatio: 1
+    cardSize: 310

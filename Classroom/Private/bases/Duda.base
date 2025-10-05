@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - student == "Duda"
+    order:
+      - data
+      - conteúdo
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: file.name
+        direction: DESC
+    limit: 10
+    columnSize:
+      note.conteúdo: 354

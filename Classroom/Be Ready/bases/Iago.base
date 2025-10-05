@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Alunos == ["Iago"]
+    order:
+      - data
+      - conteúdo
+      - nivel
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: file.name
+        direction: DESC
+    columnSize:
+      note.data: 158
+      note.conteúdo: 122
+      note.nivel: 299

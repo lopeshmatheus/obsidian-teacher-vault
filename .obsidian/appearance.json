@@ -1,0 +1,9 @@
+{
+  "cssTheme": "Primary",
+  "theme": "moonstone",
+  "enabledCssSnippets": [
+    "calendar-highlight",
+    "MCL Multi Column"
+  ],
+  "baseFontSize": 16
+}

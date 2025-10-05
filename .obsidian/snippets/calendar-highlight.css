@@ -1,0 +1,11 @@
+/* --- Make the note dot on the calendar bigger and brighter --- */
+.day.has-note::before {
+  content: '●';
+  color: #3498db; /* A bright blue color */
+  font-size: 1.5em; /* Makes the dot bigger */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.7;
+}

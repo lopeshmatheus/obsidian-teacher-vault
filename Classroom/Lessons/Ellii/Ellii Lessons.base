@@ -1,0 +1,17 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("ellii-lesson")
+    order:
+      - number
+      - aliases
+      - level
+      - link
+      - file.name
+    columnSize:
+      note.number: 26
+      note.level: 167
+      note.link: 179
+      file.name: 129

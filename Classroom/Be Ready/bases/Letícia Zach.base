@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Alunos == ["Letícia"]
+    order:
+      - data
+      - nivel
+      - conteúdo
+      - file.name
+    sort:
+      - property: conteúdo
+        direction: ASC
+    columnSize:
+      note.nivel: 177
+      note.conteúdo: 272
+      file.name: 117

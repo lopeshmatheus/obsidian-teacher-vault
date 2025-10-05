@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Alunos == ["Carla"]
+    order:
+      - data
+      - conteúdo
+      - nivel
+      - file.name
+    sort:
+      - property: data
+        direction: DESC
+      - property: file.name
+        direction: ASC
+    columnSize:
+      note.data: 149
+      note.conteúdo: 164
+      note.nivel: 262
