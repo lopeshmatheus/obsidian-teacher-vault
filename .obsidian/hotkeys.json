@@ -34,5 +34,14 @@
       ],
       "key": "P"
     }
+  ],
+  "templater-obsidian:Templates/Formatar Calendario.md": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "U"
+    }
   ]
 }

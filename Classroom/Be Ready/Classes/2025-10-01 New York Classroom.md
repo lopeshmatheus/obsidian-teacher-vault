@@ -2,16 +2,18 @@
 material: ESL Brains
 nivel: A1
 conteúdo: "25"
-nome: New York Classroom
 Alunos:
   - Larissa Lemes
   - Larissa Castilho
   - Rafael
-data: 2025-10-01T19:00:00
 tags: be-ready-classes
 quiz: true
 dg-publish: true
 gemini-quiz: https://g.co/gemini/share/aba5a0caa2d7
+date: 2025-10-01
+startTime: 19:00
+endTime: 20:00
+title: New York Classroom
 ---
 ## Principais conclusões
 
