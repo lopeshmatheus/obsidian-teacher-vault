@@ -9,7 +9,7 @@
   "promptDelete": false,
   "defaultViewMode": "preview",
   "newFileLocation": "folder",
-  "newFileFolderPath": "notes",
+  "newFileFolderPath": "temp",
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "Attachments",
   "readableLineLength": true
