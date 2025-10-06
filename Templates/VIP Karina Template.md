@@ -8,8 +8,12 @@ conteúdo:
 nome: VIP Karina
 Alunos:
   - Karina
-data: "<% tp.date.now("YYYY-MM-DD[T]07:00:00") %>"
-tags: aula
+date: "<% tp.date.now("YYYY-MM-DD") %>"
+tags:
+  - be-ready-classes
 quiz: false
+startTime: 15:00
+endTime: 16:00
+title: VIP Karina
 dg-publish: true
 ---

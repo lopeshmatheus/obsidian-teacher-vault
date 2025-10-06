@@ -5,11 +5,14 @@ await tp.file.rename(title);
 material: English File
 nivel: Upper Intermediate
 conteúdo: 
-nome: VIP Danny
 Alunos:
   - Danny
-data: "<% tp.date.now("YYYY-MM-DD[T]10:00:00") %>"
-tags: aula
+date: "<% tp.date.now("YYYY-MM-DD") %>"
+tags:
+  - be-ready-classes
 quiz: false
+startTime: 11:00
+endTime: 12:00
+title: VIP Danny
 dg-publish: true
 ---

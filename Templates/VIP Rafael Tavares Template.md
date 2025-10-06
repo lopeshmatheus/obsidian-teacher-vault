@@ -5,11 +5,14 @@ await tp.file.rename(title);
 material: ESL Brains
 nivel: A1
 conteúdo: 
-nome: VIP Rafael Tavares
 Alunos:
   - Rafael Tavares
-data: "<% tp.date.now("YYYY-MM-DD[T]09:00:00") %>"
-tags: aula
+date: "<% tp.date.now("YYYY-MM-DD") %>"
+tags:
+  - be-ready-classes
 quiz: false
+startTime: 14:00
+endTime: 15:00
+title: VIP Rafael Tavares
 dg-publish: true
 ---

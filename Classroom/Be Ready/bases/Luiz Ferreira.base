@@ -5,18 +5,20 @@ views:
       and:
         - Alunos == ["Luiz Ferreira"]
     order:
-      - data
+      - date
       - conteúdo
       - nivel
       - file.name
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
       - property: nivel
         direction: DESC
     limit: 10
     columnSize:
-      note.data: 172
-      note.conteúdo: 120
+      note.date: 157
+      note.conteúdo: 78
       note.nivel: 260
       file.name: 140

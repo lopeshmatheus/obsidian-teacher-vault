@@ -5,13 +5,16 @@ await tp.file.rename(title);
 material: American English File
 nivel: Starter
 conteúdo: 
-nome: New York Classroom
 Alunos:
   - Larissa Lemes
   - Larissa Castilho
   - Rafael
-data: "<% tp.date.now("YYYY-MM-DD[T]19:00:00") %>"
-tags: aula
+date: "<% tp.date.now("YYYY-MM-DD") %>"
+tags:
+  - be-ready-classes
 quiz: false
+startTime: 19:00
+endTime: 20:00
+title: New York Classroom
 dg-publish: true
 ---

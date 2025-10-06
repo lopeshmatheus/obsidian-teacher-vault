@@ -5,12 +5,12 @@ tags:
 ---
 ```dataview
 TABLE WITHOUT ID
-    key AS "Mês",
-    map(rows, (r) => link(r.file.path, dateformat(r.data, "cccc, d"))) AS "Data da Aula",
+    dateformat(rows[0].date, "MMMM yyyy") AS "Mês",
+    map(rows, (r) => link(r.file.path, dateformat(r.date, "cccc, d"))) AS "Data da Aula",
     rows.conteúdo AS "Conteúdo"
-FROM #be-ready-classes 
-WHERE nome = "VIP Luana Melo"
+FROM #be-ready-classes
+WHERE title = "VIP Luana Melo"
 SORT date DESC
-GROUP BY dateformat(data, "MMMM yyyy") as key
+GROUP BY dateformat(date, "yyyy-MM")
 SORT key DESC
 ```

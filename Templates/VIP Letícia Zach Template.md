@@ -8,8 +8,12 @@ conteúdo:
 nome: VIP Letícia
 Alunos:
   - Letícia
-data: "<% tp.date.now("YYYY-MM-DD[T]08:00:00") %>"
-tags: aula
+date: "<% tp.date.now("YYYY-MM-DD") %>"
+tags:
+  - be-ready-classes
 quiz: false
+startTime: 17:00
+endTime: 18:00
+title: VIP Letícia Zach
 dg-publish: true
 ---
