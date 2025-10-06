@@ -1,0 +1,16 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("my-material")
+    order:
+      - lesson
+      - title
+      - level
+      - link
+      - file.name
+    sort: []
+    columnSize:
+      note.lesson: 11
+      note.title: 255

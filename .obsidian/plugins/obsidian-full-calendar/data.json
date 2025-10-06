@@ -4,6 +4,11 @@
       "type": "local",
       "color": "#ff9e9e",
       "directory": "Classroom/Be Ready/Classes"
+    },
+    {
+      "type": "local",
+      "color": "#ec9532",
+      "directory": "Classroom/Private/Classes"
     }
   ],
   "defaultCalendar": 0,

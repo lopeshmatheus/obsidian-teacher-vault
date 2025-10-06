@@ -5,14 +5,12 @@ views:
       and:
         - student == "Duda"
     order:
+      - date
       - data
-      - conteúdo
       - file.name
+      - conteúdo
     sort:
-      - property: data
-        direction: DESC
       - property: file.name
         direction: DESC
-    limit: 10
     columnSize:
       note.conteúdo: 354

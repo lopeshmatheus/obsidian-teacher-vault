@@ -11,7 +11,6 @@ views:
     sort:
       - property: data
         direction: DESC
-    limit: 10
     columnSize:
-      note.conteúdo: 112
+      note.conteúdo: 292
       file.name: 128

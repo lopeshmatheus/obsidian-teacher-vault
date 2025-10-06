@@ -5,10 +5,13 @@ views:
       and:
         - student == "Myllena"
     order:
+      - date
       - data
       - conteúdo
       - file.name
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
       - property: conteúdo

@@ -3,19 +3,23 @@ views:
     name: Table
     filters:
       and:
-        - nome == "London Classroom"
+        - title == "London Classroom"
     order:
-      - data
+      - date
       - conteúdo
       - Alunos
       - file.name
     sort:
+      - property: date
+        direction: DESC
+      - property: conteúdo
+        direction: DESC
       - property: data
         direction: DESC
       - property: Alunos
         direction: DESC
     columnSize:
-      note.data: 167
-      note.conteúdo: 156
+      note.date: 130
+      note.conteúdo: 119
       note.Alunos: 250
       file.name: 122

@@ -3,18 +3,19 @@ views:
     name: Table
     filters:
       and:
-        - nome == "New York Classroom"
+        - title == "New York Classroom"
     order:
-      - data
+      - date
       - conteúdo
       - Alunos
       - file.name
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
     limit: 10
     columnSize:
-      note.data: 154
-      note.conteúdo: 104
+      note.conteúdo: 227
       note.Alunos: 308
       file.name: 123

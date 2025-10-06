@@ -1,0 +1,20 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("esl-brains-lesson")
+    order:
+      - lesson
+      - link
+      - conteúdo
+      - level
+      - title
+      - file.name
+    sort: []
+    columnSize:
+      note.lesson: 12
+      note.link: 56
+      note.conteúdo: 311
+      note.level: 113
+      note.title: 225
