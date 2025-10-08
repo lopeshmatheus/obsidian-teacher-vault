@@ -6,9 +6,8 @@ views:
         - student == "Duda"
     order:
       - date
-      - data
-      - file.name
       - conteúdo
+      - file.name
     sort:
       - property: file.name
         direction: DESC

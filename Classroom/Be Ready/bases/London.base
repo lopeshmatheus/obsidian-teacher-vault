@@ -12,14 +12,10 @@ views:
     sort:
       - property: date
         direction: DESC
-      - property: conteúdo
-        direction: DESC
       - property: data
-        direction: DESC
-      - property: Alunos
         direction: DESC
     columnSize:
       note.date: 130
-      note.conteúdo: 119
+      note.conteúdo: 151
       note.Alunos: 250
       file.name: 122

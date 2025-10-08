@@ -7,5 +7,8 @@ student: Matheus
 quiz: false
 flashcards: false
 tags: [private]
+title: Matheus
+startTime: 15:30
+endTime: 16:30
 data: "<% tp.date.now("YYYY-MM-DD[T]15:30:00") %>"
 ---

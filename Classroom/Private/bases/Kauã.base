@@ -2,13 +2,17 @@ views:
   - type: table
     name: Table
     filters:
-      and:
-        - student == "Kauã"
+      or:
+        - or:
+            - title == "Kauã"
+            - student == "Kauã"
     order:
-      - data
+      - date
       - conteúdo
       - file.name
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
       - property: conteúdo

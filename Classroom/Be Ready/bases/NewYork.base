@@ -12,6 +12,8 @@ views:
     sort:
       - property: date
         direction: DESC
+      - property: conteúdo
+        direction: ASC
       - property: data
         direction: DESC
     limit: 10

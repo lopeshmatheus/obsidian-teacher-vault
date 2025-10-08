@@ -5,16 +5,19 @@ views:
       and:
         - Alunos == ["Rafael Tavares"]
     order:
-      - data
-      - material
-      - nivel
+      - date
       - conteúdo
+      - material
       - file.name
     sort:
+      - property: date
+        direction: DESC
+      - property: data
+        direction: ASC
       - property: nivel
         direction: ASC
     columnSize:
-      note.material: 101
-      note.nivel: 59
-      note.conteúdo: 59
+      note.material: 116
+      note.nivel: 90
+      note.conteúdo: 134
       file.name: 126
