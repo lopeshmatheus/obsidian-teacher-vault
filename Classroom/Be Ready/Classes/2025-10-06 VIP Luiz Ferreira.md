@@ -8,7 +8,7 @@ Alunos:
 date: 2025-10-06
 tags:
   - be-ready-classes
-quiz: false
+quiz: true
 startTime: 07:00
 endTime: 08:00
 title: VIP Luiz Ferreira
@@ -16,3 +16,4 @@ dg-publish: true
 allDay: false
 type: single
 ---
+nao veioasdasd

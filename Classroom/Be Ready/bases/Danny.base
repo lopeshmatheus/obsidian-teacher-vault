@@ -5,7 +5,7 @@ views:
       and:
         - Alunos == ["Danny"]
     order:
-      - data
+      - date
       - nivel
       - conteúdo
       - file.name

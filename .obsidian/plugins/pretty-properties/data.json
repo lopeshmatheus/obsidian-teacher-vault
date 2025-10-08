@@ -3,7 +3,8 @@
     "cssclasses",
     "tags",
     "banner",
-    "dg-publish"
+    "dg-publish",
+    "cover"
   ],
   "propertyPillColors": {
     "Thiago": {
@@ -79,6 +80,7 @@
   "bannerIconGap": 0,
   "bannerIconGapMobile": 20,
   "iconColor": "",
+  "iconColorDark": "",
   "iconBackground": false,
   "enableBases": false,
   "bannerPositionProperty": "banner_position",

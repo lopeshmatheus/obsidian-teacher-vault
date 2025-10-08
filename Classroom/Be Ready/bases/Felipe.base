@@ -6,14 +6,17 @@ views:
         - file.hasTag("be-ready-classes")
         - Alunos == ["Felipe"]
     order:
-      - data
+      - date
       - conteúdo
       - nivel
       - file.name
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
     limit: 10
     columnSize:
-      note.data: 147
-      note.nivel: 306
+      note.date: 117
+      note.conteúdo: 113
+      note.nivel: 106

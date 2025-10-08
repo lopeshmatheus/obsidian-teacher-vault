@@ -5,18 +5,20 @@ views:
       and:
         - Alunos == ["Luana Melo"]
     order:
-      - data
+      - date
       - nivel
       - conteúdo
       - file.name
     sort:
+      - property: file.name
+        direction: DESC
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
       - property: conteúdo
         direction: DESC
-      - property: file.name
-        direction: ASC
     columnSize:
       note.nivel: 158
-      note.conteúdo: 253
+      note.conteúdo: 136
       file.name: 132

@@ -1,19 +1,17 @@
-<%*
-const title = tp.date.now("YYYYMMDDHHmmss");
-await tp.file.rename(title);
-%>---
+---
 material: American English File
 nivel: Starter
-conteúdo: 
+conteúdo: "[[20251006094918|Lesson: Welcome to my workspace!]]"
 nome: VIP Felipe
 Alunos:
   - Felipe
-date: "<% tp.date.now("YYYY-MM-DD") %>"
+date: 2025-10-07
 tags:
   - be-ready-classes
-quiz: false
+faltou: true
 startTime: 08:00
 endTime: 09:00
 title: VIP Felipe
 dg-publish: true
 ---
+não veio

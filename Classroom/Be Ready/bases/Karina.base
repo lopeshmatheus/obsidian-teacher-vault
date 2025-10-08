@@ -6,11 +6,13 @@ views:
         - file.hasTag("be-ready-classes")
         - Alunos == ["Karina"]
     order:
-      - data
+      - date
       - conteúdo
       - material
       - file.name
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
       - property: material
@@ -18,6 +20,6 @@ views:
       - property: conteúdo
         direction: ASC
     columnSize:
-      note.data: 156
+      note.date: 118
       note.conteúdo: 120
       note.material: 265

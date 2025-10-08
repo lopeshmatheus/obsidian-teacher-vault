@@ -5,19 +5,23 @@ views:
       and:
         - file.hasTag("be-ready-classes")
         - quiz != true
+        - file.hasProperty("quiz")
     order:
       - quiz
-      - data
+      - date
+      - title
       - conteúdo
-      - nome
       - gemini-quiz
       - file.name
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
     columnSize:
-      note.quiz: 16
-      note.data: 113
-      note.conteúdo: 89
-      note.nome: 145
-      file.name: 41
+      note.quiz: 61
+      note.date: 115
+      note.title: 168
+      note.conteúdo: 94
+      note.gemini-quiz: 121
+      file.name: 118

@@ -17,3 +17,11 @@ views:
     cardSize: 320
     imageAspectRatio: 1.65
     imageFit: contain
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.hasTag("be-ready-classes-bases")
+    image: note.cover
+    imageAspectRatio: 0.7
+    cardSize: 140

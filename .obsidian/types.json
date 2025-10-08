@@ -34,6 +34,8 @@
     "taskdonedate": "date",
     "done": "checkbox",
     "": "checkbox",
-    "title": "text"
+    "title": "text",
+    "faltou": "checkbox",
+    "conteúdo": "multitext"
   }
 }

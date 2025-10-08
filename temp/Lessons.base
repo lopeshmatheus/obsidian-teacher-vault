@@ -6,15 +6,15 @@ views:
         - file.hasTag("esl-brains-lesson")
     order:
       - lesson
-      - link
-      - conteúdo
       - level
+      - conteúdo
       - title
+      - link
       - file.name
     sort: []
     columnSize:
       note.lesson: 12
-      note.link: 56
-      note.conteúdo: 311
-      note.level: 113
+      note.level: 61
+      note.conteúdo: 281
       note.title: 225
+      note.link: 56

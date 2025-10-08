@@ -5,15 +5,20 @@ views:
       and:
         - Alunos == ["Caleb Silva"]
     order:
-      - data
+      - date
       - conteúdo
       - nivel
       - file.name
     sort:
+      - property: date
+        direction: DESC
+      - property: nivel
+        direction: ASC
       - property: data
         direction: DESC
       - property: file.name
         direction: ASC
     columnSize:
-      note.conteúdo: 238
-      note.nivel: 178
+      note.date: 152
+      note.conteúdo: 193
+      note.nivel: 156
