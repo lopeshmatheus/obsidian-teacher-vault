@@ -5,14 +5,18 @@ views:
       and:
         - Alunos == ["Letícia"]
     order:
-      - data
+      - date
       - nivel
       - conteúdo
       - file.name
     sort:
+      - property: date
+        direction: DESC
+      - property: data
+        direction: ASC
       - property: conteúdo
         direction: ASC
     columnSize:
       note.nivel: 177
-      note.conteúdo: 272
+      note.conteúdo: 115
       file.name: 117

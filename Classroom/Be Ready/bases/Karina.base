@@ -21,5 +21,5 @@ views:
         direction: ASC
     columnSize:
       note.date: 118
-      note.conteúdo: 120
-      note.material: 265
+      note.conteúdo: 202
+      note.material: 185

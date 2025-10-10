@@ -10,6 +10,8 @@ views:
       - conteúdo
       - file.name
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
     columnSize:

@@ -6,7 +6,6 @@ views:
         - student == "Myllena"
     order:
       - date
-      - data
       - conteúdo
       - file.name
     sort:

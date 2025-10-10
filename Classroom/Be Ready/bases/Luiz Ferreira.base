@@ -19,6 +19,6 @@ views:
     limit: 10
     columnSize:
       note.date: 157
-      note.conteúdo: 78
+      note.conteúdo: 132
       note.nivel: 260
       file.name: 140

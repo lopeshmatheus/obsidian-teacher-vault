@@ -13,6 +13,6 @@ tags:
 quiz: false
 startTime: 19:00
 endTime: 20:00
-title: New York Classroom
+title: VIP Caleb Silva
 dg-publish: true
 ---

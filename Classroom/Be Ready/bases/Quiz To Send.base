@@ -19,9 +19,8 @@ views:
       - property: data
         direction: DESC
     columnSize:
-      note.quiz: 61
+      note.quiz: 27
       note.date: 115
       note.title: 168
-      note.conteúdo: 94
-      note.gemini-quiz: 121
-      file.name: 77
+      note.conteúdo: 208
+      file.name: 112
