@@ -1,0 +1,16 @@
+filters:
+  and:
+    - quiz == false
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("private")
+    order:
+      - file.name
+      - title
+      - date
+    limit: 10
+    columnSize:
+      note.title: 106

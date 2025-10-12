@@ -12,5 +12,5 @@
   "newFileFolderPath": "temp",
   "alwaysUpdateLinks": true,
   "attachmentFolderPath": "Attachments",
-  "readableLineLength": true
+  "readableLineLength": false
 }

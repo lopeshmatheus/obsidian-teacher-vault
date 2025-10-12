@@ -36,6 +36,7 @@
     "": "checkbox",
     "title": "text",
     "faltou": "checkbox",
-    "conteúdo": "multitext"
+    "conteúdo": "multitext",
+    "tópics": "multitext"
   }
 }

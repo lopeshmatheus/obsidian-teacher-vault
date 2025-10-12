@@ -5,10 +5,13 @@ views:
       and:
         - student == "Matheus"
     order:
-      - data
+      - date
       - conteúdo
       - file.name
+      - gemini-quiz
     sort:
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
     columnSize:
