@@ -16,6 +16,6 @@ views:
         direction: DESC
     columnSize:
       note.date: 130
-      note.conteúdo: 151
+      note.conteúdo: 613
       note.Alunos: 250
       file.name: 122

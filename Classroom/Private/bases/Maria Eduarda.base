@@ -5,17 +5,19 @@ views:
       and:
         - student == "Maria Eduarda"
     order:
-      - data
+      - date
       - conteúdo
       - file.name
     sort:
+      - property: file.name
+        direction: DESC
+      - property: date
+        direction: DESC
       - property: data
         direction: DESC
       - property: conteúdo
         direction: ASC
-      - property: file.name
-        direction: ASC
     limit: 10
     columnSize:
-      note.data: 197
-      note.conteúdo: 306
+      note.conteúdo: 851
+      file.name: 153

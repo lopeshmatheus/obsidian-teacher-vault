@@ -13,7 +13,7 @@ views:
       - file.name
     sort: []
     columnSize:
-      note.lesson: 12
+      note.lesson: 74
       note.level: 61
       note.conteúdo: 281
       note.title: 225

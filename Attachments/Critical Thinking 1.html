@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Page: Critical Thinking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Estilo para garantir que o layout ocupe a tela toda */
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden; /* Previne o scroll da página inteira */
+        }
+        /* Animação de virar o card */
+        .card-inner {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+        .card.flipped .card-inner {
+            transform: rotateY(180deg);
+        }
+        .card-front, .card-back {
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+        .card-back {
+            transform: rotateY(180deg);
+        }
+        /* Estilos do quiz */
+        .correct-answer {
+            background-color: #d1fae5 !important;
+            border-color: #10b981 !important;
+            color: #065f46;
+        }
+        .wrong-answer {
+            background-color: #fee2e2 !important;
+            border-color: #ef4444 !important;
+            color: #991b1b;
+        }
+        /* Estilos das abas */
+        .tab-btn.active {
+            border-color: #2563eb;
+            color: #2563eb;
+            background-color: #eff6ff;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 flex flex-col">
+
+    <header class="text-center p-4 shadow-md bg-white">
+        <h1 class="text-2xl sm:text-3xl font-bold text-gray-900">Critical Thinking: Dynamic Page</h1>
+        <p class="text-md text-gray-600 mt-1">Explore the lesson's vocabulary interactively.</p>
+    </header>
+
+    <main class="flex-1 flex flex-col overflow-hidden">
+        <!-- Navegação por Abas -->
+        <nav id="tabs" class="flex border-b border-gray-200 bg-white">
+            <button data-tab="flashcards" class="tab-btn active flex-1 py-3 px-1 text-center font-semibold text-gray-500 border-b-2 border-transparent hover:bg-gray-50 transition-colors">Flashcards</button>
+            <button data-tab="examples" class="tab-btn flex-1 py-3 px-1 text-center font-semibold text-gray-500 border-b-2 border-transparent hover:bg-gray-50 transition-colors">Sentences</button>
+            <button data-tab="quiz" class="tab-btn flex-1 py-3 px-1 text-center font-semibold text-gray-500 border-b-2 border-transparent hover:bg-gray-50 transition-colors">Quiz</button>
+        </nav>
+
+        <!-- Conteúdo das Abas -->
+        <div id="tab-content" class="flex-1 p-4 sm:p-6 overflow-y-auto">
+            <!-- Seção de Flashcards -->
+            <section id="flashcards" class="tab-panel">
+                <div id="flashcard-container" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+                    <!-- Cards serão inseridos aqui -->
+                </div>
+            </section>
+
+            <!-- Seção de Frases de Exemplo -->
+            <section id="examples" class="tab-panel hidden">
+                <div id="example-container" class="space-y-4 max-w-3xl mx-auto">
+                    <!-- Frases serão inseridas aqui -->
+                </div>
+            </section>
+
+            <!-- Seção de Quiz -->
+            <section id="quiz" class="tab-panel hidden">
+                <div id="quiz-container" class="bg-white p-6 rounded-lg shadow-md max-w-2xl mx-auto">
+                     <div id="quiz-content">
+                        <p class="text-lg font-medium mb-2 text-center text-gray-600">Fill in the blank:</p>
+                        <p id="question-text" class="text-lg font-medium mb-4 text-center"></p>
+                        <div id="options-container" class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            <!-- Opções do quiz aqui -->
+                        </div>
+                    </div>
+                    <div id="quiz-result" class="hidden text-center">
+                        <h3 class="text-xl font-bold">Quiz Finished!</h3>
+                        <p class="mt-2 text-lg">Your score: <span id="score" class="font-bold"></span></p>
+                        <button onclick="restartQuiz()" class="mt-6 bg-blue-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-blue-700 transition-colors duration-300">
+                            Try Again
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const vocabulary = [
+            { en: 'Critical Thinking', pt: 'Pensamento Crítico' },
+            { en: 'Decision-making', pt: 'Tomada de decisão' },
+            { en: 'Problem-solving', pt: 'Resolução de problemas' },
+            { en: 'Essential workplace skill', pt: 'Habilidade essencial no trabalho' },
+            { en: 'Sit on the fence', pt: 'Ficar em cima do muro' },
+            { en: 'Put beliefs to the test', pt: 'Colocar as crenças à prova' },
+            { en: 'Make quick judgments', pt: 'Fazer julgamentos precipitados' },
+            { en: 'Without enough evidence', pt: 'Sem evidências suficientes' },
+            { en: 'Analyze your options', pt: 'Analisar suas opções' },
+            { en: 'Come to a conclusion', pt: 'Chegar a uma conclusão' },
+            { en: 'Value analysis over intuition', pt: 'Valorizar a análise sobre a intuição' },
+            { en: 'Be skeptical of', pt: 'Ser cético em relação a' },
+            { en: 'Unquestioned ideologies', pt: 'Ideologias inquestionáveis' },
+            { en: 'Persistent and careful', pt: 'Persistente e cuidadoso' },
+            { en: 'A limited tool', pt: 'Uma ferramenta limitada' },
+        ];
+
+        const exampleSentences = [
+            { en: 'Critical thinking is necessary for academic success.', pt: 'O pensamento crítico é necessário para o sucesso acadêmico.' },
+            { en: 'Good decision-making requires you to evaluate all the possible outcomes.', pt: 'Uma boa tomada de decisão exige que você avalie todos os resultados possíveis.' },
+            { en: 'The team is focused on problem-solving to improve the customer experience.', pt: 'A equipe está focada na resolução de problemas para melhorar a experiência do cliente.' },
+            { en: 'You can\'t sit on the fence forever; you need to choose a side.', pt: 'Você não pode ficar em cima do muro para sempre; você precisa escolher um lado.' },
+            { en: 'A good leader avoids making quick judgments about their team members.', pt: 'Um bom líder evita fazer julgamentos precipitados sobre os membros de sua equipe.' },
+        ];
+        
+        // --- Lógica das Abas ---
+        const tabsContainer = document.getElementById('tabs');
+        const tabPanels = document.querySelectorAll('.tab-panel');
+        
+        tabsContainer.addEventListener('click', (e) => {
+            if (e.target.classList.contains('tab-btn')) {
+                const tabName = e.target.dataset.tab;
+                
+                tabsContainer.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                e.target.classList.add('active');
+                
+                tabPanels.forEach(panel => {
+                    if (panel.id === tabName) {
+                        panel.classList.remove('hidden');
+                    } else {
+                        panel.classList.add('hidden');
+                    }
+                });
+            }
+        });
+
+        // --- Lógica dos Flashcards ---
+        const flashcardContainer = document.getElementById('flashcard-container');
+        vocabulary.forEach(item => {
+            const card = document.createElement('div');
+            card.className = 'card bg-transparent rounded-lg h-32 cursor-pointer';
+            card.style.perspective = '1000px';
+            card.innerHTML = `
+                <div class="card-inner relative w-full h-full text-center">
+                    <div class="card-front absolute w-full h-full flex items-center justify-center bg-white p-2 rounded-lg shadow-md">
+                        <p class="text-md font-semibold">${item.en}</p>
+                    </div>
+                    <div class="card-back absolute w-full h-full flex items-center justify-center bg-blue-600 text-white p-2 rounded-lg shadow-md">
+                        <p class="text-md font-semibold">${item.pt}</p>
+                    </div>
+                </div>
+            `;
+            card.addEventListener('click', () => card.classList.toggle('flipped'));
+            flashcardContainer.appendChild(card);
+        });
+
+        // --- Lógica das Frases de Exemplo ---
+        const exampleContainer = document.getElementById('example-container');
+        exampleSentences.forEach(sentence => {
+            const div = document.createElement('div');
+            div.className = 'bg-white p-4 rounded-lg shadow-md';
+            div.innerHTML = `
+                <p class="text-gray-800 mb-2">${sentence.en}</p>
+                <p class="text-blue-700 font-medium">${sentence.pt}</p>
+            `;
+            exampleContainer.appendChild(div);
+        });
+
+        // --- Lógica do Quiz ---
+        const quizSource = [
+            { sentence: "______ is necessary for academic success.", answer: "Critical Thinking" },
+            { sentence: "Good ______ requires you to evaluate all the possible outcomes.", answer: "Decision-making" },
+            { sentence: "The team is focused on ______ to improve the customer experience.", answer: "Problem-solving" },
+            { sentence: "You can't ______ forever; you need to choose a side.", answer: "Sit on the fence" },
+            { sentence: "A good leader avoids ______ about their team members.", answer: "Make quick judgments" },
+        ];
+
+        let quizQuestions = [];
+        let currentQuestionIndex = 0;
+        let score = 0;
+
+        const questionText = document.getElementById('question-text');
+        const optionsContainer = document.getElementById('options-container');
+        const quizContent = document.getElementById('quiz-content');
+        const quizResult = document.getElementById('quiz-result');
+        const scoreDisplay = document.getElementById('score');
+        
+        function generateQuizQuestions() {
+            quizQuestions = [];
+            const shuffledSource = [...quizSource].sort(() => 0.5 - Math.random());
+            
+            shuffledSource.forEach(item => {
+                const correctAnswer = item.answer;
+                const options = [correctAnswer];
+                const wrongOptionsPool = vocabulary.filter(v => v.en !== correctAnswer).map(v => v.en);
+                
+                while(options.length < 4 && wrongOptionsPool.length > 0) {
+                     const randomIndex = Math.floor(Math.random() * wrongOptionsPool.length);
+                     options.push(wrongOptionsPool.splice(randomIndex, 1)[0]);
+                }
+
+                quizQuestions.push({
+                    question: item.sentence.replace('______', '<span class="font-bold text-blue-600">_______</span>'),
+                    options: options.sort(() => 0.5 - Math.random()),
+                    answer: correctAnswer
+                });
+            });
+        }
+
+        function displayQuestion() {
+            if (currentQuestionIndex < quizQuestions.length) {
+                const q = quizQuestions[currentQuestionIndex];
+                questionText.innerHTML = q.question;
+                optionsContainer.innerHTML = '';
+                q.options.forEach(option => {
+                    const button = document.createElement('button');
+                    button.textContent = option;
+                    button.className = 'w-full text-center p-3 bg-gray-100 rounded-lg border-2 border-gray-200 hover:bg-gray-200 transition-colors';
+                    button.onclick = () => checkAnswer(button, option, q.answer);
+                    optionsContainer.appendChild(button);
+                });
+            } else {
+                showResults();
+            }
+        }
+
+        function checkAnswer(button, selected, correct) {
+            Array.from(optionsContainer.children).forEach(btn => {
+                btn.disabled = true;
+                btn.classList.remove('hover:bg-gray-200');
+            });
+
+            if (selected === correct) {
+                score++;
+                button.classList.add('correct-answer');
+            } else {
+                button.classList.add('wrong-answer');
+                Array.from(optionsContainer.children).forEach(btn => {
+                    if (btn.textContent === correct) {
+                        btn.classList.add('correct-answer');
+                    }
+                });
+            }
+            
+            setTimeout(() => {
+                currentQuestionIndex++;
+                displayQuestion();
+            }, 1200);
+        }
+
+        function showResults() {
+            quizContent.classList.add('hidden');
+            quizResult.classList.remove('hidden');
+            scoreDisplay.textContent = `${score} de ${quizQuestions.length}`;
+        }
+        
+        function restartQuiz() {
+            currentQuestionIndex = 0;
+            score = 0;
+            quizResult.classList.add('hidden');
+            quizContent.classList.remove('hidden');
+            startQuiz();
+        }
+
+        function startQuiz() {
+            generateQuizQuestions();
+            displayQuestion();
+        }
+
+        startQuiz();
+    </script>
+</body>
+</html>
+

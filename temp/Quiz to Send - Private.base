@@ -8,9 +8,9 @@ views:
       and:
         - file.hasTag("private")
     order:
-      - file.name
       - title
       - date
+      - file.name
     limit: 10
     columnSize:
       note.title: 106

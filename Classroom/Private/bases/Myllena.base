@@ -9,6 +9,7 @@ views:
       - conteúdo
       - file.name
       - gemini-lesson
+      - gemini-quiz
     sort:
       - property: date
         direction: DESC
