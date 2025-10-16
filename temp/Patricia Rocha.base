@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - Alunos == ["Patricia"]
+    order:
+      - date
+      - material
+      - conteúdo
+      - file.name
+    columnSize:
+      note.material: 137

@@ -17,6 +17,6 @@ views:
       - property: nivel
         direction: ASC
     columnSize:
-      note.conteúdo: 232
+      note.conteúdo: 274
       note.material: 116
       file.name: 126

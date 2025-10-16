@@ -17,6 +17,5 @@ views:
       - property: file.name
         direction: ASC
     columnSize:
-      note.data: 149
-      note.conteúdo: 164
+      note.conteúdo: 202
       note.nivel: 262

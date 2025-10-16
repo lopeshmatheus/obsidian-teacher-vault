@@ -5,10 +5,10 @@ views:
       and:
         - Alunos == ["Iago"]
     order:
-      - conteúdo
-      - nivel
-      - file.name
       - date
+      - nivel
+      - conteúdo
+      - file.name
     sort:
       - property: data
         direction: DESC

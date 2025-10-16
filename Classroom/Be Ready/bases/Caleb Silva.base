@@ -10,14 +10,14 @@ views:
       - nivel
       - file.name
     sort:
+      - property: file.name
+        direction: DESC
       - property: date
         direction: DESC
       - property: nivel
         direction: ASC
       - property: data
         direction: DESC
-      - property: file.name
-        direction: ASC
     columnSize:
       note.date: 152
       note.conteúdo: 193

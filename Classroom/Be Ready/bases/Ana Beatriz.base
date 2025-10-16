@@ -6,8 +6,8 @@ views:
         - Alunos == ["Ana Beatriz"]
     order:
       - date
-      - conteúdo
       - nivel
+      - conteúdo
       - file.name
     sort:
       - property: date
@@ -22,5 +22,5 @@ views:
         direction: ASC
     columnSize:
       note.date: 126
-      note.conteúdo: 86
+      note.conteúdo: 247
       note.nivel: 268
