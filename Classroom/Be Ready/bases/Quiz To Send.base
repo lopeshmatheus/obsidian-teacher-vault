@@ -11,8 +11,8 @@ views:
       - date
       - title
       - conteúdo
-      - gemini-quiz
       - file.name
+      - gemini-quiz
     sort:
       - property: date
         direction: DESC
@@ -22,5 +22,6 @@ views:
       note.quiz: 27
       note.date: 115
       note.title: 168
-      note.conteúdo: 208
+      note.conteúdo: 354
       file.name: 112
+      note.gemini-quiz: 362
