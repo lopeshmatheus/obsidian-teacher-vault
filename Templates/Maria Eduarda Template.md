@@ -10,5 +10,5 @@ tags: [private]
 title: Maria Eduarda
 startTime: 16:00
 endTime: 17:00
-data: "<% tp.date.now("YYYY-MM-DD[T]16:00:00") %>"
+date: "<% tp.date.now("YYYY-MM-DD") %>"
 ---

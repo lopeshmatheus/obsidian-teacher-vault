@@ -22,5 +22,5 @@ views:
         direction: ASC
     columnSize:
       note.date: 126
-      note.conteúdo: 247
-      note.nivel: 268
+      note.nivel: 176
+      note.conteúdo: 549

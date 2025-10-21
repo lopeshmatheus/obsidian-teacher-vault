@@ -11,10 +11,14 @@ views:
       - title
       - link
       - file.name
-    sort: []
+    sort:
+      - property: level
+        direction: ASC
+      - property: lesson
+        direction: ASC
     columnSize:
       note.lesson: 74
       note.level: 61
       note.conteúdo: 447
       note.title: 225
-      note.link: 56
+      note.link: 483
