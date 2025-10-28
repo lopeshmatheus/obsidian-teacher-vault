@@ -24,6 +24,10 @@
     },
     "Rafael": {
       "pillColor": "cyan"
+    },
+    "Janaina": {
+      "pillColor": "purple",
+      "textColor": "default"
     }
   },
   "propertyLongtextColors": {

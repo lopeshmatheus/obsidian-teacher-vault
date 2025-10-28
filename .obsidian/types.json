@@ -37,6 +37,8 @@
     "title": "text",
     "faltou": "checkbox",
     "conteúdo": "multitext",
-    "tópics": "multitext"
+    "tópics": "multitext",
+    "lesson": "number",
+    "grammar": "multitext"
   }
 }

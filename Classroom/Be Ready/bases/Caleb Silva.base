@@ -10,8 +10,6 @@ views:
       - nivel
       - file.name
     sort:
-      - property: file.name
-        direction: DESC
       - property: date
         direction: DESC
       - property: nivel

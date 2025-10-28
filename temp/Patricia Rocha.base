@@ -9,5 +9,8 @@ views:
       - material
       - conteúdo
       - file.name
+    sort:
+      - property: date
+        direction: DESC
     columnSize:
       note.material: 137

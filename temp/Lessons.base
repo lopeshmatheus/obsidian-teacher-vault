@@ -16,9 +16,11 @@ views:
         direction: ASC
       - property: lesson
         direction: ASC
+      - property: conteúdo
+        direction: ASC
     columnSize:
       note.lesson: 74
-      note.level: 61
+      note.level: 120
       note.conteúdo: 447
-      note.title: 225
+      note.title: 309
       note.link: 483
