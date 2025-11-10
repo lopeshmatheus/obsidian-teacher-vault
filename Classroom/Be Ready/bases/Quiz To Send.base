@@ -1,3 +1,6 @@
+properties:
+  note.faltou:
+    displayName: presente
 views:
   - type: table
     name: Table
@@ -8,6 +11,7 @@ views:
         - file.hasProperty("quiz")
     order:
       - quiz
+      - faltou
       - date
       - title
       - conteúdo
@@ -15,6 +19,8 @@ views:
       - gemini-quiz
     sort:
       - property: date
+        direction: DESC
+      - property: faltou
         direction: DESC
       - property: data
         direction: DESC

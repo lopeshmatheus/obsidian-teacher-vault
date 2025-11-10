@@ -11,6 +11,10 @@ views:
       - title
       - date
       - file.name
+      - gemini-quiz
+    sort:
+      - property: date
+        direction: DESC
     limit: 10
     columnSize:
       note.title: 106

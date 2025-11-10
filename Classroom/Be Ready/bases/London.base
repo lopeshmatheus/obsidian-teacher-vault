@@ -12,6 +12,8 @@ views:
     sort:
       - property: date
         direction: DESC
+      - property: Alunos
+        direction: ASC
       - property: data
         direction: DESC
     columnSize:

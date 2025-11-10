@@ -18,5 +18,5 @@ views:
     limit: 10
     columnSize:
       note.date: 117
-      note.conteúdo: 326
+      note.conteúdo: 347
       note.nivel: 106
