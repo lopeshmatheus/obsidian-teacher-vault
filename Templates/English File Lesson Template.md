@@ -4,8 +4,10 @@ await tp.file.rename(title);
 %>---
 material: " English File"
 nivel:
+lesson:
 conteúdo:
-path:
 grammar:
 vocabulary:
+aliases:
+  - 
 ---

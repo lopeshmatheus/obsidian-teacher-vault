@@ -38,7 +38,10 @@
     "faltou": "checkbox",
     "conteúdo": "multitext",
     "tópics": "multitext",
-    "lesson": "number",
-    "grammar": "multitext"
+    "lesson": "text",
+    "grammar": "multitext",
+    "vocabulary": "multitext",
+    "unit": "text",
+    "presente": "checkbox"
   }
 }

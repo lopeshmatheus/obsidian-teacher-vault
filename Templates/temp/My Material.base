@@ -9,8 +9,13 @@ views:
       - title
       - level
       - link
+      - conteúdo
       - file.name
-    sort: []
+    sort:
+      - property: lesson
+        direction: ASC
     columnSize:
       note.lesson: 11
       note.title: 255
+      note.level: 78
+      note.conteúdo: 640

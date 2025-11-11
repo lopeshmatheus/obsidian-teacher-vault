@@ -9,7 +9,7 @@ level: A2
 conteúdo:
   - simple present
   - Present Continuous
-link: https://gemini.google.com/share/636b0ff204fd
+gemini-lesson: https://gemini.google.com/share/636b0ff204fd
 lesson: 2
 esl-link: https://drive.google.com/drive/folders/1tCr3dZvuws2PjdlmLMkofp0KNNIuCZRf
 ---

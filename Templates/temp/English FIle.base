@@ -7,14 +7,20 @@ views:
     order:
       - lesson
       - level
-      - link
-      - title
       - conteúdo
+      - grammar
+      - gemini-lesson
+      - vocabulary
       - file.name
     sort:
+      - property: lesson
+        direction: ASC
+      - property: level
+        direction: DESC
       - property: conteúdo
         direction: ASC
     columnSize:
-      note.lesson: 63
-      note.level: 118
-      note.title: 232
+      note.lesson: 101
+      note.level: 190
+      note.gemini-lesson: 152
+      note.conteúdo: 272

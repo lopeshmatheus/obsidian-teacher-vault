@@ -7,9 +7,8 @@ views:
     order:
       - date
       - conteúdo
-      - file.name
-      - gemini-lesson
       - gemini-quiz
+      - file.name
     sort:
       - property: date
         direction: DESC
@@ -18,5 +17,4 @@ views:
       - property: conteúdo
         direction: ASC
     columnSize:
-      note.data: 173
-      note.conteúdo: 303
+      note.conteúdo: 412

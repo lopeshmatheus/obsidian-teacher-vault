@@ -1,17 +1,22 @@
+properties:
+  note.link:
+    displayName: link
 views:
   - type: table
     name: Table
     filters:
       and:
         - file.hasTag("esl-brains-lesson")
+        - '!file.inFolder("Templates")'
     order:
       - lesson
       - level
-      - conteúdo
       - title
-      - link
+      - conteúdo
       - file.name
     sort:
+      - property: link
+        direction: ASC
       - property: level
         direction: ASC
       - property: lesson
@@ -19,8 +24,7 @@ views:
       - property: conteúdo
         direction: ASC
     columnSize:
-      note.lesson: 74
-      note.level: 120
-      note.conteúdo: 447
+      note.lesson: 64
+      note.level: 56
       note.title: 309
-      note.link: 483
+      note.conteúdo: 880

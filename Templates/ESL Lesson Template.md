@@ -1,14 +1,16 @@
+<%*
+const title = tp.date.now("YYYYMMDDHHmmss");
+await tp.file.rename(title);
+%>---
 ---
 tags:
   - esl-brains-lesson
 aliases:
   - 
-title: 
 material: ESL Brains
-level: A1
+level:
 conteúdo:
   - 
-link: 
-lesson: 
+gemini-link: 
 esl-link: 
 ---

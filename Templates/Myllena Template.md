@@ -10,5 +10,5 @@ tags: [private]
 title: Myllena
 startTime: 14:00
 endTime: 14:45
-data: "<% tp.date.now("YYYY-MM-DD[T]14:15:00") %>"
+date: "<% tp.date.now("YYYY-MM-DD") %>"
 ---
