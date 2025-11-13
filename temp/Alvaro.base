@@ -1,0 +1,19 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      or:
+        - student == "Ju e Alvaro"
+        - student == "Alvaro"
+    order:
+      - date
+      - gemini-lesson
+      - gemini-quiz
+      - file.name
+    sort:
+      - property: date
+        direction: ASC
+      - property: gemini-lesson
+        direction: DESC
+    columnSize:
+      note.gemini-quiz: 134

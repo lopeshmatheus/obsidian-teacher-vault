@@ -21,3 +21,5 @@ views:
       note.conteúdo: 613
       note.Alunos: 250
       file.name: 122
+  - type: dash-table-view
+    name: View

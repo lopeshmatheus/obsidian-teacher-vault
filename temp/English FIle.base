@@ -1,0 +1,28 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("english-file-lesson")
+    groupBy:
+      property: level
+      direction: DESC
+    order:
+      - lesson
+      - conteúdo
+      - grammar
+      - gemini-lesson
+      - vocabulary
+      - file.name
+    sort:
+      - property: lesson
+        direction: ASC
+      - property: level
+        direction: DESC
+      - property: conteúdo
+        direction: ASC
+    columnSize:
+      note.lesson: 101
+      note.conteúdo: 272
+      note.gemini-lesson: 152
+      note.vocabulary: 198

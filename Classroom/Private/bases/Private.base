@@ -7,3 +7,5 @@ views:
     order:
       - file.name
     cardSize: 290
+    markers: number
+    indentProperties: true

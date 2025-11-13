@@ -1,9 +1,10 @@
 {
-  "cssTheme": "Primary",
+  "cssTheme": "Prism",
   "theme": "moonstone",
   "enabledCssSnippets": [
     "calendar-highlight",
     "MCL Multi Column"
   ],
-  "baseFontSize": 16
+  "baseFontSize": 16,
+  "accentColor": ""
 }

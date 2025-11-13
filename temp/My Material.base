@@ -1,0 +1,24 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("my-material")
+    groupBy:
+      property: level
+      direction: ASC
+    order:
+      - lesson
+      - title
+      - level
+      - link
+      - conteúdo
+      - file.name
+    sort:
+      - property: lesson
+        direction: ASC
+    columnSize:
+      note.lesson: 11
+      note.title: 255
+      note.level: 78
+      note.conteúdo: 640

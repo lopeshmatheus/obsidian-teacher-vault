@@ -1,8 +1,13 @@
 {
   "pluginList": [
+    "edrickleong/obsidian-calendar-bases",
     "anareaty/pretty-properties"
   ],
   "pluginSubListFrozenVersion": [
+    {
+      "repo": "edrickleong/obsidian-calendar-bases",
+      "version": "latest"
+    },
     {
       "repo": "anareaty/pretty-properties",
       "version": "latest"
@@ -18,5 +23,6 @@
   "debuggingMode": false,
   "notificationsEnabled": true,
   "personalAccessToken": "",
-  "selectLatestPluginVersionByDefault": false
+  "selectLatestPluginVersionByDefault": false,
+  "allowIncompatiblePlugins": false
 }
