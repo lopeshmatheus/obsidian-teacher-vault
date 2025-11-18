@@ -12,5 +12,7 @@ views:
     sort:
       - property: date
         direction: DESC
+      - property: file.name
+        direction: ASC
     columnSize:
       note.material: 137

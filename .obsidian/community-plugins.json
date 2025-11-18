@@ -20,5 +20,7 @@
   "horizontal-blocks",
   "tabs",
   "callout-manager",
-  "callout-menu"
+  "callout-menu",
+  "better-properties",
+  "multi-properties"
 ]

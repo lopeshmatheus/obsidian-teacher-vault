@@ -1,3 +1,7 @@
+---
+dg-publish: true
+---
+
 ```dataview
 TABLE WITHOUT ID
     date AS "Data da Aula",

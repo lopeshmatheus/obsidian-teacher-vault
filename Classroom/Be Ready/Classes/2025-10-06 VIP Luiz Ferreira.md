@@ -13,7 +13,6 @@ startTime: 07:00
 endTime: 08:00
 title: VIP Luiz Ferreira
 dg-publish: true
-allDay: false
 type: single
 ---
 nao veioasdasd

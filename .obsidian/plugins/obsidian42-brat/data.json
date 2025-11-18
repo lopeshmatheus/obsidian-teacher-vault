@@ -1,9 +1,14 @@
 {
   "pluginList": [
+    "unxok/obsidian-better-properties",
     "edrickleong/obsidian-calendar-bases",
     "anareaty/pretty-properties"
   ],
   "pluginSubListFrozenVersion": [
+    {
+      "repo": "unxok/obsidian-better-properties",
+      "version": "latest"
+    },
     {
       "repo": "edrickleong/obsidian-calendar-bases",
       "version": "latest"

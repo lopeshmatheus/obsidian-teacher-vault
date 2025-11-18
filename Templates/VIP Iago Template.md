@@ -13,6 +13,6 @@ tags:
 quiz: false
 startTime: 09:00
 endTime: 10:00
-title: New York Classroom
+title: VIP Iago
 dg-publish: true
 ---

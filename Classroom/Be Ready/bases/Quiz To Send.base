@@ -29,7 +29,7 @@ views:
     columnSize:
       note.quiz: 27
       note.date: 130
-      note.gemini-quiz: 137
+      note.gemini-quiz: 154
       note.title: 168
       note.conteúdo: 354
       file.name: 114
