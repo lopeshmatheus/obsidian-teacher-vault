@@ -1,0 +1,13 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - student.contains("Andrey Curtis")
+    order:
+      - date
+      - conteúdo
+      - file.name
+    columnSize:
+      note.conteúdo: 896
+      file.name: 121

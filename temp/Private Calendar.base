@@ -1,0 +1,17 @@
+views:
+  - type: calendar
+    name: Table
+    filters:
+      and:
+        - file.hasTag("private")
+    order:
+      - student
+      - tópics
+      - startTime
+    startDate: note.date
+    defaultZoom: 3
+  - type: list
+    name: View
+    order:
+      - student
+      - date

@@ -1,0 +1,9 @@
+views:
+  - type: calendar
+    name: Table
+    filters:
+      and:
+        - file.hasTag("be-ready-classes")
+    order:
+      - title
+    startDate: note.date
