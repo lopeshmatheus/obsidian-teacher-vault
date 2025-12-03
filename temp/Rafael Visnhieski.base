@@ -1,0 +1,14 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - student == "Rafael Visnhieski"
+    order:
+      - date
+      - file.name
+      - material
+      - level
+      - lesson
+    columnSize:
+      note.date: 158

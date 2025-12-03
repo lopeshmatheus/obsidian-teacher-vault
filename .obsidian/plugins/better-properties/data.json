@@ -108,7 +108,8 @@
     "date": {
       "general": {
         "icon": "",
-        "hidden": false
+        "hidden": false,
+        "collapsed": false
       },
       "array": {},
       "select": {
@@ -212,7 +213,8 @@
     "endtime": {
       "general": {
         "icon": "",
-        "hidden": false
+        "hidden": false,
+        "collapsed": false
       },
       "array": {},
       "select": {

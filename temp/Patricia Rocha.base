@@ -16,3 +16,4 @@ views:
         direction: ASC
     columnSize:
       note.material: 137
+      note.conteúdo: 300

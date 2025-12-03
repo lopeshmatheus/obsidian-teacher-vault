@@ -1,6 +1,3 @@
-filters:
-  and:
-    - quiz == false
 views:
   - type: table
     name: Table
@@ -8,6 +5,7 @@ views:
       and:
         - file.hasTag("private")
     order:
+      - quiz
       - title
       - date
       - file.name
@@ -15,6 +13,8 @@ views:
     sort:
       - property: date
         direction: DESC
-    limit: 10
+    limit: 20
     columnSize:
-      note.title: 106
+      note.title: 146
+      note.date: 127
+      note.quiz: 78

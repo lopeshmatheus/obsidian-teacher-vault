@@ -13,11 +13,11 @@ views:
     sort:
       - property: date
         direction: DESC
+      - property: conteúdo
+        direction: DESC
       - property: data
         direction: DESC
       - property: material
-        direction: ASC
-      - property: conteúdo
         direction: ASC
     columnSize:
       note.date: 118

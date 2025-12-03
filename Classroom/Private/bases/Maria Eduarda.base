@@ -19,5 +19,6 @@ views:
         direction: ASC
     limit: 10
     columnSize:
+      note.date: 106
       note.conteúdo: 851
       file.name: 153
