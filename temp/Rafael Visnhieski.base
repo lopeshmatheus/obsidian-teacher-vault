@@ -7,8 +7,11 @@ views:
     order:
       - date
       - file.name
-      - material
-      - level
-      - lesson
+      - conteúdo
+    sort:
+      - property: date
+        direction: DESC
     columnSize:
       note.date: 158
+      note.material: 116
+      note.level: 103

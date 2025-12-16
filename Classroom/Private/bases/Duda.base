@@ -14,6 +14,5 @@ views:
         direction: DESC
       - property: file.name
         direction: DESC
-    limit: 10
     columnSize:
       note.conteúdo: 354

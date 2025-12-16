@@ -8,6 +8,9 @@ views:
       - date
       - conteúdo
       - file.name
+    sort:
+      - property: date
+        direction: DESC
     columnSize:
       note.conteúdo: 896
       file.name: 121
