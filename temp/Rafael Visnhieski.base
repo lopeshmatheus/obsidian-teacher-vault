@@ -6,12 +6,13 @@ views:
         - student == "Rafael Visnhieski"
     order:
       - date
-      - file.name
       - conteúdo
+      - file.name
     sort:
       - property: date
         direction: DESC
+      - property: conteúdo
+        direction: DESC
     columnSize:
       note.date: 158
-      note.material: 116
-      note.level: 103
+      note.conteúdo: 971

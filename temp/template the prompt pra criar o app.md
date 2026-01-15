@@ -1,3 +1,29 @@
+I want to create a simple Lesson generator app, that creates beautifly crafted material for my English classes. 
+
+it has some parts, a curriculum, which I will paste in the end of the prompt so you embed it to the app.
+
+and from the curriculum, the user will be able to select the lessons, generate it and store it (via the app or download the page, in pdf or html) 
+
+the user will also be able to make bonus classes, in which they will upload a pdf of different material, that could be a story or something else, the app will scrap the content given and create the lesson material from it.
+
+what's the lesson like:
+
+vocabulary: a list (or cards) of vocabulary relevant to the lessons, this vocabulary should take into consideration the curriculum, the level of difficulty and other relevant things. The vocabulary should be chucked, because this is the main way the student will learn the grammar (the student should never see a grammar term in the lesson material) from context, so, in a class in which he will learn about the present perfect, the vocabulary should be something like: "I have been" "She has gone" "recently" and so on. 
+
+this should be doubled, a first, more obvious and common vocabulary, and another bonus section, with more specific vocabulary that deepens the structure being learned.
+
+and for each voabulary section, there should be a sentences drill section, which takes all the vocabulary in context and create sentences. These setences should try to have: the vocabulary itself, the structure thats being taught, and also, in a natural way, review vocabulary and previous structures. another important part of it is the constrast whenever possible, so to practice the present perfect, throw in some simple past sentences to throw off the student.
+
+the next section should be the story, create a simple and compeling story that uses the vocabulary and the structure of the current lesson. if this is a customizable lesson, you should put here the content (if it's a story) 
+
+the next section is a conversation starter, try to make the student talk with enganging quesions, whenever possible, try to instigate the use of the vocabularyu and struture but don;t limite it to that, because having interesting questions is more important. 
+
+and lastly, generate a quiz that tests the vocabulary and the structure of the lesson.
+
+attention, the homewokr should be 100% contextual, simples phrases that the student must chose the correct alternative to the sentence, all in english and no mention to the actual grammar being tested.
+
+in the generator input, you can add a option to add any prompt to modify or to give any specific instructions for this particular lessons, here is the curriculum, store this in the app to it can always refer to 
+
 # Currículo Completo de Aulas
 
 ## MÓDULO 1: FUNDAMENTOS DA COMUNICAÇÃO E ROTINA
