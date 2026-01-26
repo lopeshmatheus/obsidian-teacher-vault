@@ -25,3 +25,5 @@ views:
     image: note.cover
     imageAspectRatio: 0.7
     cardSize: 140
+  - type: table
+    name: View 2

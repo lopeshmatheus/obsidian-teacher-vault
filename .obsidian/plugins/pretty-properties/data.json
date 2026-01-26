@@ -28,6 +28,10 @@
     "Janaina": {
       "pillColor": "purple",
       "textColor": "default"
+    },
+    "Diego": {
+      "pillColor": "cyan",
+      "textColor": "default"
     }
   },
   "propertyLongtextColors": {
@@ -48,6 +52,7 @@
   "extraCoverProperties": [],
   "bannerHeight": 200,
   "bannerHeightMobile": 100,
+  "bannerHeightPopover": 100,
   "bannerMargin": -70,
   "bannerMarginMobile": 0,
   "bannerFading": true,
@@ -59,6 +64,7 @@
   "coverHorizontalWidth": 300,
   "coverSquareWidth": 250,
   "coverCircleWidth": 200,
+  "coverMaxWidthPopover": 150,
   "progressProperties": {},
   "allTasksCount": "tasks",
   "completedTasksCount": "tasks_completed",
@@ -86,7 +92,6 @@
   "iconColor": "",
   "iconColorDark": "",
   "iconBackground": false,
-  "enableBases": false,
   "bannerPositionProperty": "banner_position",
   "addPillPadding": "all",
   "addBaseTagColor": true,
@@ -118,6 +123,7 @@
   "propertySearchKey": "Ctrl",
   "showTagColorSettings": false,
   "iconSizeMobile": 70,
+  "iconSizePopover": 50,
   "hidePropertiesInPropTab": false,
   "autoTasksCount": true,
   "enableColoredTagsInTagPane": false,
@@ -138,6 +144,20 @@
       "textColor": "default"
     }
   },
+  "coverPosition": "left",
+  "enableBannersInPopover": false,
+  "enableIconsInPopover": false,
+  "enableCoversInPopover": false,
+  "hideAllEmptyProperties": false,
+  "hiddenWhenEmptyProperties": [],
+  "iconInTitle": false,
+  "titleIconSize": 30,
+  "titleTextIconMatchTitleSize": true,
+  "imageLinkFormat": "link",
+  "hideMetadataContainerIfAllPropertiesHiddenEditing": false,
+  "hideMetadataContainerIfAllPropertiesHiddenReading": false,
+  "autoHidePropertiesWithBanner": false,
+  "enableBases": false,
   "dateFutureColor": "",
   "datePastColor": "",
   "datePresentColor": "",

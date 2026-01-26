@@ -12,6 +12,8 @@ views:
     sort:
       - property: date
         direction: DESC
+      - property: conteúdo
+        direction: ASC
       - property: Alunos
         direction: ASC
       - property: data

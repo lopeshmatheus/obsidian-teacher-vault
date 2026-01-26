@@ -26,6 +26,7 @@ views:
         direction: DESC
       - property: data
         direction: DESC
+    limit: 15
     columnSize:
       note.quiz: 27
       note.date: 130

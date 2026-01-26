@@ -18,6 +18,6 @@ views:
         direction: DESC
     limit: 10
     columnSize:
-      note.conteúdo: 357
+      note.conteúdo: 452
       note.Alunos: 308
       file.name: 123

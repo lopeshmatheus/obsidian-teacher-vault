@@ -4,10 +4,12 @@ dg-publish: true
 
 ```dataview
 TABLE WITHOUT ID
-    date AS "Data da Aula",
-    link(file.path, conteúdo) AS "Conteúdo Ministrado",
-    title AS "Turma"
-FROM #be-ready-classes 
-WHERE contains(Alunos, "Patricia")
+    dateformat(rows[0].date, "MMMM yyyy") AS "Mês",
+    map(rows, (r) => link(r.file.path, dateformat(r.date, "cccc, d"))) AS "Data da Aula",
+    rows.conteúdo AS "Conteúdo"
+FROM #be-ready-classes
+WHERE title = "VIP Patricia"
 SORT date DESC
+GROUP BY dateformat(date, "yyyy-MM")
+SORT key DESC
 ```
