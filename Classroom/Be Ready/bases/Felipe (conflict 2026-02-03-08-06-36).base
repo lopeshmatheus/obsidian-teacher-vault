@@ -4,20 +4,19 @@ views:
     filters:
       and:
         - file.hasTag("be-ready-classes")
-        - Alunos == ["Karina"]
+        - Alunos == ["Felipe"]
     order:
       - date
       - conteúdo
-      - material
+      - nivel
       - file.name
     sort:
       - property: date
         direction: DESC
       - property: data
         direction: DESC
-      - property: material
-        direction: ASC
+    limit: 10
     columnSize:
-      note.date: 118
-      note.conteúdo: 415
-      note.material: 185
+      note.date: 117
+      note.conteúdo: 347
+      note.nivel: 106

@@ -1,0 +1,19 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - student == "Duda"
+    order:
+      - date
+      - conteúdo
+      - file.name
+      - gemini-quiz
+    sort:
+      - property: date
+        direction: DESC
+      - property: file.name
+        direction: DESC
+    limit: 10
+    columnSize:
+      note.conteúdo: 354

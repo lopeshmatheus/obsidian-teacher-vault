@@ -3,21 +3,20 @@ views:
     name: Table
     filters:
       and:
-        - file.hasTag("be-ready-classes")
-        - Alunos == ["Karina"]
+        - Alunos == ["Caleb Silva"]
     order:
       - date
       - conteúdo
-      - material
+      - nivel
       - file.name
     sort:
       - property: date
         direction: DESC
+      - property: nivel
+        direction: ASC
       - property: data
         direction: DESC
-      - property: material
-        direction: ASC
     columnSize:
-      note.date: 118
-      note.conteúdo: 415
-      note.material: 185
+      note.date: 152
+      note.conteúdo: 193
+      note.nivel: 156

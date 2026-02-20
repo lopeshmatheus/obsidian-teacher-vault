@@ -17,6 +17,8 @@ views:
         direction: DESC
       - property: material
         direction: ASC
+      - property: conteúdo
+        direction: ASC
     columnSize:
       note.date: 118
       note.conteúdo: 415

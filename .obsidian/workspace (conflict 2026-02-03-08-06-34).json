@@ -1,0 +1,253 @@
+{
+  "main": {
+    "id": "5324373015726ba8",
+    "type": "split",
+    "children": [
+      {
+        "id": "4332d5b641260967",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2582b44dc0dd06de",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Classroom/Private/Classes/20250807175746.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "20250807175746"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "5030054f5ffd4311",
+    "type": "split",
+    "children": [
+      {
+        "id": "6467c62cc240d928",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "39549ad59388f06d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "7bea6bbdabfb4ee1",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "[\"link\"]",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "5028e385665f7130",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 265.5
+  },
+  "right": {
+    "id": "3326b718ff0cd5b4",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c0f83d41f39b187",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b29240c68b3e38ab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Classroom/Lessons/English File/20251030182628.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 20251030182628"
+            }
+          },
+          {
+            "id": "76519ab8fa114acd",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Classroom/Lessons/English File/20251030182628.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from 20251030182628"
+            }
+          },
+          {
+            "id": "9edd3d2451c44f2f",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "f675b4eaedb81db4",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Classroom/Lessons/English File/20251030182628.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of 20251030182628"
+            }
+          },
+          {
+            "id": "445be7aae62f1ffa",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          },
+          {
+            "id": "f19bf0aacb767a1a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "templater-obsidian:Templater": false,
+      "digitalgarden:Digital Garden Publication Center": false,
+      "omnisearch:Omnisearch": false,
+      "obsidian42-brat:BRAT": false,
+      "obsidian-git:Open Git source control": false,
+      "obsidian-full-calendar:Open Full Calendar": false,
+      "homepage:Open homepage": false,
+      "callout-manager:Insert Callout": false
+    }
+  },
+  "active": "39549ad59388f06d",
+  "lastOpenFiles": [
+    "Classroom/Be Ready/MOCs/Be Ready.md",
+    "Classroom/Private/Classes/2025-10-08 Duda.md",
+    "Classroom/Be Ready/Classes/2025-10-06 VIP Luiz Ferreira.md",
+    "Classroom/Private/Classes/2025-10-09 Myllena.md",
+    "Home.md",
+    "temp/Untitled 3.md",
+    "Classroom/Be Ready/Classrooms/VIP Ana Beatriz.md",
+    "Classroom/Be Ready/Classrooms/VIP Felipe.md",
+    "Classroom/Be Ready/Classrooms/VIP Danny.md",
+    "Classroom/Be Ready/Classrooms/VIP Carla.md",
+    "Classroom/Be Ready/Classrooms/VIP Caleb Silva.md",
+    "Classroom/Lessons/English File/20251030182628.md",
+    "Classroom/Be Ready/Classrooms/VIP Iago.md",
+    "Classroom/Be Ready/Be Ready MOC.md",
+    "Classroom/Be Ready/Classes/20251113010933.md",
+    "Classroom/Be Ready/bases/Iago.base",
+    "Classroom/Be Ready/bases/Felipe.base",
+    "Classroom/Lessons/Lessons MOC.md",
+    "Classroom/Be Ready/Classes/20251113010840.md",
+    "Classroom/Lessons/ESL Brains/20251112120131.md",
+    "Classroom/Lessons/ESL Brains/20251006100401.md",
+    "Classroom/Lessons/ESL Brains/20251024093344.md",
+    "temp/Patricia Rocha.base",
+    "Classroom/Be Ready/Classes/20251112173942.md",
+    "Classroom/Be Ready/Classes/20251015184902.md",
+    "Classroom/Be Ready/Classes/20251110131630.md",
+    "Classroom/Be Ready/Classes/20251020195918.md",
+    "temp/Patricia.md",
+    "Classroom/Be Ready/MOCs/Rafael.md",
+    "Classroom/Be Ready/bases/NewYork.base",
+    "Classroom/Be Ready/bases/London.base",
+    "Attachments/Pasted image 20251112230906.png",
+    "Attachments/Pasted image 20251112230849.png",
+    "Attachments/Pasted image 20251112230843.png",
+    "Classroom/Be Ready/bases/NewClassroom.base",
+    "Attachments/Pasted image 20251112185902.png",
+    "Classroom/Be Ready/bases/Carla.base",
+    "Attachments/Pasted image 20251112154328.png",
+    "Attachments/Pasted image 20251112154258.png",
+    "Attachments/Pasted image 20251112154252.png",
+    "Attachments/Pasted image 20251112154241.png",
+    "Classroom/Be Ready/bases/Rafael Tavares.base",
+    "Classroom/Be Ready/bases/Luiz Ferreira.base",
+    "Classroom/Be Ready/bases/Luana Melo.base",
+    "Attachments/Pasted image 20251111142020.png",
+    "Attachments/Pasted image 20251111155920.png"
+  ]
+}

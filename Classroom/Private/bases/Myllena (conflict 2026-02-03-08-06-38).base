@@ -3,21 +3,18 @@ views:
     name: Table
     filters:
       and:
-        - file.hasTag("be-ready-classes")
-        - Alunos == ["Karina"]
+        - student == "Myllena"
     order:
       - date
       - conteúdo
-      - material
+      - gemini-quiz
       - file.name
     sort:
       - property: date
         direction: DESC
       - property: data
         direction: DESC
-      - property: material
+      - property: conteúdo
         direction: ASC
     columnSize:
-      note.date: 118
-      note.conteúdo: 415
-      note.material: 185
+      note.conteúdo: 412

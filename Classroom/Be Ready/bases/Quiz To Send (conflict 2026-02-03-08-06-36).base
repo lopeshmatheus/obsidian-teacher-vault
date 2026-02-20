@@ -1,0 +1,35 @@
+properties:
+  note.faltou:
+    displayName: presente
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("be-ready-classes")
+        - quiz != true
+        - file.hasProperty("quiz")
+    order:
+      - quiz
+      - date
+      - gemini-quiz
+      - title
+      - conteúdo
+      - file.name
+      - faltou
+    sort:
+      - property: date
+        direction: DESC
+      - property: title
+        direction: ASC
+      - property: faltou
+        direction: DESC
+      - property: data
+        direction: DESC
+    columnSize:
+      note.quiz: 27
+      note.date: 130
+      note.gemini-quiz: 137
+      note.title: 168
+      note.conteúdo: 354
+      file.name: 114

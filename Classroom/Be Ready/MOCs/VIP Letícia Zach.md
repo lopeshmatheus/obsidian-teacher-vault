@@ -11,8 +11,7 @@ TABLE WITHOUT ID
     map(rows, (r) => link(r.file.path, dateformat(r.date, "cccc, d"))) AS "Data da Aula",
     rows.conteúdo AS "Conteúdo"
 FROM #be-ready-classes
-WHERE title = "VIP Leticia Zach"
-SORT date DESC
+WHERE contains(title, "Leticia") OR contains(title, "Letícia")
 GROUP BY dateformat(date, "yyyy-MM")
 SORT key DESC
 ```

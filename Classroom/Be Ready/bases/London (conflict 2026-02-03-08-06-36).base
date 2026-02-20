@@ -3,21 +3,23 @@ views:
     name: Table
     filters:
       and:
-        - file.hasTag("be-ready-classes")
-        - Alunos == ["Karina"]
+        - title == "London Classroom"
     order:
       - date
       - conteúdo
-      - material
+      - Alunos
       - file.name
     sort:
       - property: date
         direction: DESC
+      - property: Alunos
+        direction: ASC
       - property: data
         direction: DESC
-      - property: material
-        direction: ASC
     columnSize:
-      note.date: 118
-      note.conteúdo: 415
-      note.material: 185
+      note.date: 130
+      note.conteúdo: 613
+      note.Alunos: 250
+      file.name: 122
+  - type: dash-table-view
+    name: View

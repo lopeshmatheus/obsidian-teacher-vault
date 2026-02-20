@@ -1,0 +1,20 @@
+filters:
+  and:
+    - quiz == false
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("private")
+    order:
+      - title
+      - date
+      - file.name
+      - gemini-quiz
+    sort:
+      - property: date
+        direction: DESC
+    limit: 10
+    columnSize:
+      note.title: 106
